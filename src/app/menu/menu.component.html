@@ -1,0 +1,54 @@
+<menu class="menu">
+	<div class="navigation">
+		<ul>
+			<li #start (click)="activeLink($event, start)" class="active">
+				<a href="#">
+					<span class="icon">
+						<i class="fas fa-home"></i>
+					</span>
+					<span class="text">Start</span>
+				</a>
+			</li>
+			<li #bookmarks (click)="activeLink($event, bookmarks)">
+				<a href="#">
+					<span class="icon">
+						<i class="fas fa-image"></i>
+					</span>
+					<span class="text">Bookmarks</span>
+				</a>
+			</li>
+			<li #kontakt (click)="activeLink($event, kontakt)">
+				<a href="#">
+					<span class="icon">
+						<i class="fas fa-address-card"></i>
+					</span>
+					<span class="text">Kontakt</span>
+				</a>
+			</li>
+			<li #aboutUs (click)="activeLink($event, aboutUs)">
+				<a href="#">
+					<span class="icon">
+						<i class="fas fa-users"></i>
+					</span>
+					<span class="text">Über uns</span>
+				</a>
+			</li>
+			<div class="bubble"></div>
+		</ul>
+
+		<!-- <script>
+			let navItems = document.querySelectorAll(".navigation ul li");
+
+            function activeLink() {
+            navItems.forEach((item) => {
+            item.classList.remove("active");
+            });
+
+            this.classList.add("active");
+            }
+            navItems.forEach((item) => {
+            item.addEventListener("click", activeLink);
+            });
+		</script> -->
+	</div>
+</menu>
